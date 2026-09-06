@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7fe1b3;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #41d28f;
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px #41d28f;
+}
+
+header h1 {
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+    font-size: 3rem;
+    color:#092518;
+}
+
+header h2 {
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+    font-size: 2rem;
+    color:#092518;
+}
+
+.tarjetera {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: .5rem;
+
+}
+
+.tarjeta {
+    background-color: #41d28f;
+    border-radius: 1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    gap: 1rem;
+    margin: 2rem 30% 2rem 30%;
+    background-color: #176340;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+input[type="text"]
+ {
+    width: 100%;
+    padding: .5rem;
+    border-radius: .25rem;
+    border: 2px solid #ccc;
+    height: auto;
+}
+
+.date_row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.fset_row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.btn_row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+#btnAceptar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #7fe1b3;
+    color: #092518;
+    border-radius: 0.25rem;
+    border: 1px solid #41d28f;
+    cursor: pointer;
+}
+
+#btnCancelar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #6d04a9;
+    color: #dbe8e2;
+    border-radius: 0.25rem;
+    border: 1px solid #6d04a9;
+    cursor: pointer;
+}
+
+
+
+
+
+

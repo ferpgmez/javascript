@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 20% 0 20%;
+    padding: 1rem;
+    border: .1rem
+}
+
+th {
+    background-color: #251302;
+    color: #e0d8b2;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    padding: 1rem;
+    text-align: center;
+    background-color: #e0d8b2;
+    color: #251302;
+}
+
+table:nth-child(even) :hover {
+    background-color: #251302;
+    color: #e0d8b2;
+}
+
+table:nth-child(odd) :hover {
+    background-color: #e0d8b2;
+    color: #251302;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicio 14</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <script>
+            let numero = parseInt(prompt("Ingrese un número entero positivo:"));
+            let parent = document.body;
+            let divisores = [];
+            let suma = 0;
+            for (let i = 1; i < numero; i++) {
+                if (numero % i === 0) {
+                    divisores.push(i);
+                    suma += i;
+                }
+            }
+            let paragraph1 = document.createElement('p');
+            paragraph1.textContent = `Los divisores de ${numero} son: ${divisores.join(', ')}`;
+            parent.appendChild(paragraph1);
+            let paragraph2 = document.createElement('p');
+            paragraph2.textContent = `La suma de los divisores de ${numero} es: ${suma}`;
+            parent.appendChild(paragraph2);
+            if (suma > numero) {
+                let paragraph3 = document.createElement('p');
+                paragraph3.textContent = `${numero} es un número abundante`;
+                parent.appendChild(paragraph3);
+            } else {
+                let paragraph3 = document.createElement('p');
+                paragraph3.textContent = `${numero} es un número deficiente`;
+                parent.appendChild(paragraph3);
+            }
+            if (suma === numero) {
+                let paragraph4 = document.createElement('p');
+                paragraph4.textContent = `${numero} es un número perfecto`;
+                parent.appendChild(paragraph4);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicio 5</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <h1>Control SELECT</h1>
+        <form>
+            <div class="row">
+                <label for="colors">Escoja un color:</label>
+                <select id="select1" onchange="cambiarColor(this.value)">
+                    <option value="ff0000">Rojo</option>
+                    <option value="00ff00">Verde</option>
+                    <option value="0000ff">Azul</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="numero_indice">Número de índice seleccionado del objeto SELECT:</label>
+                <input type="text1" id="text1" readonly>
+            </div>   
+            <div class="row">
+                <label for="texto_seleccionado">Texto seleccionado</label>
+                <input type="text2" id="text2" readonly>
+            </div>         
+            <div class="row">
+                <label for ="valor_seleccionado">Valor asociado</label>
+                <input type="text3" id="text3" readonly>
+            </div>
+        </form>
+    </body>
+</html>

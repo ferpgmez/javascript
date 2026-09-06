@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicio 6</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="row_selects">
+                <div class="col_30">
+                    <label for="proc_select">Seleccione un procesador</label>
+                </div>
+                <div class="col_20">
+                    <select id="proc_select">
+                        <option value="400">Intel i3</option>
+                        <option value="500">Intel i5</option>
+                        <option value="i7">Intel i7</option>
+                    </select>
+                </div>
+                <div class="col_30">
+                    <label for="uds_proc">Número de unidades</label>
+                </div>
+                <div class="col_20">
+                    <input type="number" id="uds_proc" value="0">
+                </div>
+            </div>
+            <div class="row_selects">
+                <div class="col_30">
+                    <label for="monitor_select">Seleccione un monitor</label>
+                </div>
+                <div class="col_20">
+                    <select id="monitor_select">
+                        <option value="250">Samsung 20"</option>
+                        <option value="350">Samsung 24"</option>
+                        <option value="550">Samsung 26"</option>
+                    </select>
+                </div>
+                <div class="col_30">
+                    <label for="monitor_uds">Número de unidades</label>
+                </div>
+                <div class="col_20">
+                    <input type="number" id="monitor_uds" value="0">
+                </div>
+            </div>
+            <div class="row_selects">
+                <div class="col_30">
+                    <label for="hardrive">Seleccione un disco duro</label>
+                </div>
+                <div class="col_20">
+                    <select id="hardrive">
+                        <option value="300">500 GB</option>
+                        <option value="350">1 TB</option>
+                        <option value="500">3 TB</option>
+                    </select>
+                </div>
+                <div class="col_30">
+                    <label for="hd_uds">Número de unidades</label>
+                </div>
+                <div class="col_20">
+                    <input type="number" id="hd_uds" value="0">
+                </div>
+            </div>
+            <div class="botonera">
+                <button onclick="calcularPrecio()">Calcular precio</button>
+            </div>
+            <div class="row_input">
+                <div class="col_60">
+                    <label for="total">Precio netototal</label>
+                </div>
+                <div class="col_40">
+                    <input type="text" id="total" readonly>
+                </div>
+            </div>
+            <div class="row_input">
+                <div class="col_60">
+                    <label for="iva">Precio con IVA</label>
+                </div>
+                <div class="col_40">
+                    <input type="text" id="iva" readonly>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

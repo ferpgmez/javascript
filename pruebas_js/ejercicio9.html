@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicio 9</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function ordenar(...lista) {
+                return lista.sort((x, y) => {
+                    if (x > y) {
+                        return 1;
+                    } else if (x < y) {
+                        return -1;
+                    }
+                });
+            }
+            document.write(ordenar(5, 3, 8, 1, 4));
+        </script>
+    </body>
+</html>

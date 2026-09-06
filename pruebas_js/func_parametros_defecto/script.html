@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Funcion con parametros por defecto</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <script>
+            function generarLista(vec, tipo='<ul>') {
+                let lista = tipo;
+                for (let i = 0; i < vec.length; i++) {
+                    lista += `<li>${vec[i]}</li>`;
+                }
+                if (tipo === '<ul>') {
+                    lista += '</ul>';
+                } else {
+                    lista += '</ol>';
+                }
+                return lista;
+            }
+
+            let opciones1 = ['Opcion 1', 'Opcion 2', 'Opcion 3', 'Opcion 4', 'Opcion 5'];
+            document.write(generarLista(opciones1));
+
+            let opciones2 = ['Opcion 1', 'Opcion 2', 'Opcion 3', 'Opcion 4', 'Opcion 5'];
+            document.write(generarLista(opciones2, '<ol>'));
+        </script>
+    </body>
+</html>

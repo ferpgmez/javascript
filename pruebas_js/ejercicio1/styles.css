@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #010101;
+    font-family: Arial, sans-serif;
+}
+
+#title {
+    text-align: center;
+    font-size: 4rem;
+    margin: 2rem 0 2rem 0;
+    color: #d2ff4d;
+    text-shadow: 0 0 10px #d2ff4d;
+}
+
+.buttondiv {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: #010101;
+    color: beige;
+    border: 0.1rem solid beige;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px #1f1f1f;
+    cursor: pointer;
+}

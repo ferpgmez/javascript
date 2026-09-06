@@ -1,0 +1,22 @@
+let vector = cargarVector();
+let sum = sumarVector(vector);
+let promedio = media(vector);
+let maximo = max(vector);
+let minimo = min(vector);
+
+parent = document.body;
+let p = document.createElement("p");
+p.textContent = "Vector: " + vector.join(", ");
+parent.appendChild(p);
+let p2 = document.createElement("p");
+p2.textContent = "Suma: " + sum;
+parent.appendChild(p2);
+let p3 = document.createElement("p");
+p3.textContent = "Promedio: " + promedio;
+parent.appendChild(p3);
+let p4 = document.createElement("p");
+p4.textContent = "Maximo: " + maximo;
+parent.appendChild(p4);
+let p5 = document.createElement("p");
+p5.textContent = "Minimo: " + minimo;
+parent.appendChild(p5);

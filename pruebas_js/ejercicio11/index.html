@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicio 11</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Actualizacion de salarios</h1>
+        </header>
+        <main>
+            <form id="actForm">
+                <div class="form-row">
+                    <div class="colLabel">
+                        <label for="name">Nombre</label>
+                    </div>
+                    <div class="colInput">
+                        <input type="text" id="name" name="name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="colLabel">
+                        <label for="lname">Apellido</label>
+                    </div>
+                    <div class="colInput">
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="colLabel">
+                        <label for="antiguedad">Antiguedad</label>
+                    </div>
+                    <div class="colInput">
+                        <input type="text" id="antiguedad" name="antiguedad">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="colLabel">
+                        <label for="salario">Salario</label>
+                    </div>
+                    <div class="colInput">
+                        <input type="text" id="salario" name="salario">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <button type="submit" id="btnAceptar">Aceptar</button>
+                    <button type="reset" id="btnCancelar">Cancelar</button>
+                </div>
+            </form>
+            <div id="result"></div>
+        </main>
+    </body>
+</html>

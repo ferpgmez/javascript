@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Prueba Clase</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script type="module" src="scripts/app.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Banco Jones</h1>
+            <h2>Operaciones de cuenta</h2>
+            <div class="tarjetera">
+                <div class="tarjeta">
+                    <img src="img/tarjeta1.jpeg" alt="Tarjeta 1">
+                </div>
+                <div class="tarjeta">
+                    <img src="img/tarjeta2.webp" alt="Tarjeta 2">
+                </div>
+                <div class="tarjeta">
+                    <img src="img/tarjeta3.jpeg" alt="Tarjeta 3">
+                </div>
+                <div class="tarjeta">
+                    <img src="img/tarjeta4.jpeg" alt="Tarjeta 4">
+                </div>
+            </div>
+        </header>
+        <main>
+            <form id="form">
+                <div class="form-row">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-row">
+                    <label for="lname">Apellido</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+                <div class="form-row">
+                    <label for="age">Edad</label>
+                    <input type="text" id="age" name="age">
+                </div>
+                <div class="form-row">
+                    <label for="saldo">Saldo</label>
+                    <input type="text" id="saldo" name="saldo" readonly>
+                </div>
+                <fieldset>
+                    <legend>Operacion</legend>
+                    <div class="date_row">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+                    <div class="fset_row">
+                        <input type="radio" id="extract" name="extract">
+                        <label for="extract">Retirar efectivo</label>
+                    </div>
+                    <div class="fset_row">
+                        <input type="radio" id="deposito" name="deposito">
+                        <label for="deposito">Depositar efectivo</label>
+                    </div>
+                    <div class="form_row">
+                        <label for="monto">Monto</label>
+                        <input type="number" id="monto" name="monto">
+                    </div>
+                    <div class="btn_row">
+                        <button type="button" id="btnAceptar">Aceptar</button>
+                        <button type="button" id="btnCancelar">Cancelar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

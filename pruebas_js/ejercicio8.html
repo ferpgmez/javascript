@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicio 8</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function tablaMultiplicar(numero=2, terminos=10) {
+                document.write(`<h2>Tabla de multiplicar del ${numero}</h2><br>`);
+                for (let i = 1; i <= terminos; i++) {
+                    document.write(`${i} x ${numero} = ${i * numero}<br>`);
+                }
+            }
+            tablaMultiplicar();
+            tablaMultiplicar(3);
+            tablaMultiplicar(5, 20);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+let numNotas = parseInt(prompt("Ingrese el numero de notas: "));
+let notas = cargarNotas(numNotas);
+let promedio = calcularPromedio(notas);
+let notaMinima = hallarNotaMinima(notas);
+let notaMaxima = hallarNotaMaxima(notas);
+let suspensos = contarSuspensos(notas);
+let aprobados = contarAprobados(notas);
+let buscar = parseFloat(prompt("Ingrese la nota a buscar: "));
+let indice = buscarNota(notas, buscar);
+
+
+let parent = document.body;
+let p = document.createElement("p");
+p.textContent = "Notas: " + notas.join(", ");
+parent.appendChild(p);
+let p2 = document.createElement("p");
+p2.textContent = "Promedio: " + promedio.toFixed(2);
+parent.appendChild(p2);
+let p3 = document.createElement("p");
+p3.textContent = "Nota minima: " + notaMinima;
+parent.appendChild(p3);
+let p4 = document.createElement("p");
+p4.textContent = "Nota maxima: " + notaMaxima;
+parent.appendChild(p4);
+let p5 = document.createElement("p");
+p5.textContent = "Suspensos: " + suspensos;
+parent.appendChild(p5);
+let p6 = document.createElement("p");
+p6.textContent = "Aprobados: " + aprobados;
+parent.appendChild(p6);
+let p7 = document.createElement("p");
+p7.textContent = "Indice de la nota buscada: " + indice;
+parent.appendChild(p7);

@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c9c6b6;     
+}
+
+main {
+    margin: 2rem 30% 2rem 30%;
+    background-color: #645f43;
+    border-radius: .5rem;
+    border: 1px solid #271605;
+    padding: 1rem;
+    color: orange;
+    text-shadow: 0 0 10px #271605;
+}
+
+.row_selects {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.col_30 {
+    width: 30%;
+    text-align: left;
+}
+
+.col_30 label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.col_20 {
+    width: 20%;
+    text-align: left;
+}
+
+.col_20 select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #271605;
+    background-color: #f0f0f0;
+    color: #271605;
+}
+
+.col_20 input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #271605;
+    background-color: #ffffff;
+    color: #271605;
+}
+
+.row_input {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 0.5rem;
+}
+
+.row_input .col_60 label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: left;
+    width: 60%;
+}
+
+.row_input .col_40 input {
+    width: 40%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #271605;
+    background-color: #f0f0f0;
+    color: #271605;
+}
+
+.botonera {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #271605;
+    background-color: #f0f0f0;
+    color: #271605;
+    cursor: pointer;
+}
